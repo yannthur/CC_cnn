@@ -101,7 +101,7 @@ RECYCLING_INFO = {
 def load_model():
     """Charge le modèle pré-entraîné"""
     try:
-        model = keras.models.load_model('model.keras')
+        model = keras.models.load_model('best_model.keras')
         return model
     except Exception as e:
         st.error(f"⚠️ Erreur lors du chargement du modèle : {e}")
