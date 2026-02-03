@@ -101,7 +101,7 @@ RECYCLING_INFO = {
 def load_model():
     """Charge le modèle pré-entraîné"""
     try:
-        model = keras.models.load_model('model.h5')
+        model = keras.models.load_model('model.keras')
         return model
     except Exception as e:
         st.error(f"⚠️ Erreur lors du chargement du modèle : {e}")
